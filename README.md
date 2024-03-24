@@ -13,8 +13,8 @@ Airbnb as an online aggregator for short-term property rentals in Antwerp, Belgi
 3. Hosts (Data on hosts who've posted their listing) 
    columns: host_id, host_name, host_since, host_location, host_about. 
 4. Reviews (Data on Reviews) 
-   columns: listing_id, review_id, date, reviewer_id, reviewer_name, comments
-
+   columns: listing_id, review_id, date, reviewer_id, reviewer_name, comments.
+   
 ## Software/Tools
 Programming Languages: Python
 Jupyter Notebook
@@ -26,6 +26,15 @@ Matplotlib
 Seaborn
 Machine Learning Libraries:
 Scikit-learn
+
+## Data Cleaning
+## Exploratory Data Analysis
+## Correlation Metrics
+## Feature Selection 
+## Model Building
+## Model Evaluation
+## Best model
+## Comparison metrics
 
 
 
