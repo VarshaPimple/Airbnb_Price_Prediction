@@ -1,25 +1,34 @@
 # Airbnb_Price_Prediction
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
-%matplotlib inline
-import seaborn as sns
-import warnings
-warnings.filterwarnings('ignore')
-from datetime import datetime
-from scipy.stats import norm
+
+Antwerp, located in Belgium, is a popular tourist destination known for its rich history, vibrant culture, and architectural landmarks.
+
+## Business Objective
+Airbnb as an online aggregator for short-term property rentals in Antwerp, Belgium, aims to provide property owners with a tool to suggest appropriate listing prices. This tool can help property owners optimize their rental income while remaining competitive in the market.
+
+## Data Understanding
+1. Calendar (Data on listings in Chronological Order)  
+   columns: listing_id, date,  available, price, minimum_nights, maximum_nights 
+2. Listings (Data on details of a particular listing) 
+   columns: listing_id, listing_url, name, description, lat (latitude), long (longitude), property_typ, room_type, accommodates, bathrooms, bedrooms, beds, amenities, host_id.
+3. Hosts (Data on hosts who've posted their listing) 
+   columns: host_id, host_name, host_since, host_location, host_about. 
+4. Reviews (Data on Reviews) 
+   columns: listing_id, review_id, date, reviewer_id, reviewer_name, comments
+
+## Software/Tools
+Programming Languages: Python
+Jupyter Notebook
+Data Analysis and Manipulation Libraries:
+Pandas
+NumPy
+Data Visualization Libraries:
+Matplotlib
+Seaborn
+Machine Learning Libraries:
+Scikit-learn
 
 
-calendar_df = pd.read_csv("calendar.csv")
-listings_df = pd.read_csv("listings1.csv")
-hosts_df = pd.read_csv("hosts.csv")
-reviews_df = pd.read_csv("reviews.csv")
 
-total_rows_cal = calendar_df.shape[0]
 
-#Count total number of unique Listing IDs in the calendar dataset
-unique_listing_ids_cal = calendar_df['listing_id'].nunique()
 
-f"Total number of rows in calendar table are {total_rows_cal} and Total Unique listing_ids are {unique_listing_ids_cal}."
-Total number of rows in calendar table are 319192 and Total Unique listing_ids are 1749.
+
